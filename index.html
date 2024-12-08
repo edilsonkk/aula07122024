@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quiz interativo"> 
+    <meta name="keywords" content="palavras chaves do quiz">
+    <title>Introdução HTML CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Texto em h1</h1>
+        <p>Texto em parágrafo usa-se a tag p</p>
+    </header>
+    <main>
+        <!--Introdução-->
+        <section>
+            <h2>Texto em h2</h2>
+            <p><strong>Texto em negrito usa-se a tag strong</strong></p>
+            <p><em>Texto em itálico usa-se a tag em</em></p>
+            <p>Quebrando um <br> texto com a tag br</p>
+            <p>Exemplo de <abbr title="Usa-se a tag abbr">abreviação</abbr></p>
+        </section>
+        <!--pergunta 1-->
+        <section>
+            <h2>Pergunta do tipo "radio" usando form e input type="radio"</h2>
+            <form>
+                <input type="radio" value="opcao1" id="p1a" name="pergunta1">
+                <label for="p1a">Opção 1</label>
+                <input type="radio" value="opcao2" id="p1b" name="pergunta1">
+                <label for="p1b">Opção 2</label>
+                <input type="radio" value="opcao3" id="p1c" name="pergunta1">
+                <label for="p1c">Opção 3</label>
+                <input type="radio" value="opcao4" id="p1d" name="pergunta1">
+                <label for="p1d">Opção 4</label>
+                <input type="radio" value="opcao5" id="p1e" name="pergunta1">
+                <label for="p1e">Opção 5</label>
+            </form>
+        </section>
+
+        <!--pergunta 2-->
+        <section>
+            <h2>Pergunta do tipo "text" usando form e input type="text"</h2>
+            <form>
+                <!--não usa o value porque o valor vai ser enviado pelo que digitou no texto-->
+                <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta aqui...">
+            </form>
+        </section>
+        
+        <!--pergunta 3-->
+        <section>
+            <h2>Pergunta do tipo senha usando form e input type="password"</h2>
+            <form>
+                <input type="password" id="p3" name="pergunta3" placeholder="Digite sua senha aqui">
+            </form>
+        </section>
+
+
+        <!--pergunta 4-->
+        <section>
+            <h2>Pergunta do tipo data usando form e input type="date"</h2>
+            <form>
+                <input type="date" id="p4" name="pergunta4">
+            </form>
+        </section>
+
+        <!--pergunta 5-->
+        <section>
+            <h2>Pergunta do tipo checkbox usando form e input type="checkbox"</h2>
+            <form>
+                <input type="checkbox" id="p5a" name="pergunta5" value="checka">
+                <label for="p5a">Check 1</label>
+                <input type="checkbox" id="p5b" name="pergunta5" value="checkb">
+                <label for="p5b">Check 2</label>
+                <input type="checkbox" id="p5c" name="pergunta5" value="checkc">
+                <label for="p5c">Check 3</label>
+                <input type="checkbox" id="p5d" name="pergunta5" value="checkd">
+                <label for="p5d">Check 4</label>
+                <input type="checkbox" id="p5e" name="pergunta5" value="checke">
+                <label for="p5e">Check 5</label>
+            </form>
+        </section>
+
+        <!--pergunta 6-->
+        <section>
+            <h2>Pergunta para upload de arquivos usa form e input type="file"</h2>
+            <form>
+                <input type="file" id="p6" name="pergunta6">
+            </form>
+        </section>
+
+        <!--pergunta 7-->
+        <section>
+            <h2>Pergunta do tipo menu suspenso usando form, select e option</h2>
+            <form>
+                <select name="pergunta7" id="p7">
+                    <option value="op1">opção 1</option>
+                    <option value="op2">opção 2</option>
+                    <option value="op3">opção 3</option>
+                    <option value="op4">opção 4</option>
+                    <option value="op5">opção 5</option>
+                </select>
+            </form>
+        </section>
+
+        <!-- pergunta 8-->
+        <section>
+            <h2>Pergunta do tipo imagem usando figure, img e input type="text"</h2>
+            <figure>
+                <img src="https://avatars.githubusercontent.com/u/49736027?v=4" alt="imagem do github">
+                <figcaption>Figura 1: Logo do github</figcaption>
+            </figure>
+            <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta aqui">
+        </section>
+
+        <!--Tabela-->
+        <section>
+            <h2>Criação de tabela usando table, tr e td</h2>
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </table>
+        </section>
+
+    </main>
+    <footer>
+
+
+    </footer>
+</body>
+</html>
