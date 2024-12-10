@@ -38,6 +38,17 @@
             </form>
         </section>
 
+        <section>
+            <p>input tipo radio</p>
+            <form>
+                <input type="radio" id="p1a" name="pergunta1" value="opcao1">
+                <label for="p11">Opção 1</label>
+                <input type="radio" id="p1b" name="pergunta1" value="opcao2">
+                <label for="p1b">Opção 2</label>
+            </form>
+
+        </section>
+
         <!--pergunta 2-->
         <section>
             <h2>Pergunta do tipo "text" usando form e input type="text"</h2>
@@ -46,6 +57,14 @@
                 <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta aqui...">
             </form>
         </section>
+
+        <section>
+            <h2>pergunta do tipo text</h2>
+            <form>
+                <input type="text" id="p2" name="pergunta2" placeholder="Digite aqui a resposta">
+            </form>
+        </section>
+
         
         <!--pergunta 3-->
         <section>
@@ -55,10 +74,23 @@
             </form>
         </section>
 
+        <section>
+            <h2>pergunta do tipo password senha</h2>
+            <form>
+                <input type="password" id="p3" name="pergunta3" placeholder="Digite sua senha aqui">
+            </form>
+        </section>
 
         <!--pergunta 4-->
         <section>
             <h2>Pergunta do tipo data usando form e input type="date"</h2>
+            <form>
+                <input type="date" id="p4" name="pergunta4">
+            </form>
+        </section>
+
+        <h2>pergunta do tipo date</h2>
+        <section>
             <form>
                 <input type="date" id="p4" name="pergunta4">
             </form>
@@ -81,12 +113,28 @@
             </form>
         </section>
 
+        <section>
+            <h2>pergunta do tipo checkbox</h2>
+            <input type="checkbox" id="p5a" name="pergunta5" value="opcao1">
+            <label for="p5a">Opçao 1</label>
+
+            <input type="checkbox" id="p5b" name="pergunta5" value="opcao2">
+            <label for="p5b">Opção 2</label>
+        </section>
+            
+        
+
         <!--pergunta 6-->
         <section>
             <h2>Pergunta para upload de arquivos usa form e input type="file"</h2>
             <form>
                 <input type="file" id="p6" name="pergunta6">
             </form>
+        </section>
+
+        <section>
+            <h2>pergunta do tipo file</h2>
+            <input type="file" id="p6" value="pergunta6">
         </section>
 
         <!--pergunta 7-->
@@ -103,6 +151,15 @@
             </form>
         </section>
 
+        <section>
+            <h2>pergunta do tipo menu suspenso</h2>
+            <select name="pergunta7" id="p7">
+                <option value="op1">Opção 1</option>
+                <option value="op2">Opção 2</option>
+            </select>
+
+        </section>
+
         <!-- pergunta 8-->
         <section>
             <h2>Pergunta do tipo imagem usando figure, img e input type="text"</h2>
@@ -113,22 +170,85 @@
             <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta aqui">
         </section>
 
+        <section>
+            <h2>pergunta do tipo imagem</h2>
+            <figure>
+                <img src="fonte da imagem" alt="imagem tal">
+                <figcaption>Figura tal: descrição da figura</figcaption>
+            </figure>
+        </section>
+g
         <!--Tabela-->
         <section>
-            <h2>Criação de tabela usando table, tr e td</h2>
-            <table>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-
+            <h2>Criação de tabela usando table, tr=linha e td=coluna</h2>
+            <h2>Tabela tem thead, tbody e tfooter</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Cabeçalho da tabela</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>linha1, coluna1</td>
+                        <td>linha1,coluna2</td>
+                    </tr>
+                    <tr>
+                        <td>linha2, coluna1</td>
+                        <td>linha2,coluna2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Rodapé da tabela usando colspan="2"</td>
+                    </tr>
+                </tfoot>
             </table>
+        </section>
+
+        <!--Listas-->
+        <section>
+            <h2>Lista não enumerada</h2>
+            <h2>Tag details para esconder</h2>
+            <details>
+                <ul>
+                    <li>item da lista</li>
+                    <li>item da lista</li>
+                </ul>
+                <h2>Lista enumerada</h2>
+                <ol>
+                    <li>item da lista</li>
+                    <li>item da lista</li>
+                </ol>
+            </details>
+        </section>
+
+        <!--Formulário-->
+        <section>
+            <h2>Formulário usando fieldset, legend, input e textarea</h2>
+            <fieldset>
+                <legend>Usando tag legend</legend>
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"><br>
+
+                    <label for="comentario">Comentário</label><br>
+                    <textarea name="comentario" id="comentario" rows="4" cols="50" placeholder="Comentário usando tag textarea"></textarea>
+
+                    <button onclick="alert('teste de alerta usando alert()')">Botão usando tag button</button>
+                </form>
+            </fieldset>
         </section>
 
     </main>
     <footer>
-
-
+        <p>Usando símbolo de registrado com tag "ecomercial"copy</p>
+        <p>&copy;</p>
+        <p>Usando a tag a href="" e target="_blank" para abrir em outra aba</p>
+        <a href="" target="_blank">Botão</a>
     </footer>
 </body>
 </html>
